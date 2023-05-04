@@ -1,0 +1,18 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add new Product</h1>
+    <form #form="ngForm" (ngSubmit)="addProduct()">
+        <div class="form-group">
+          <label for="title"></label>
+          <input type="text" class="form-control" id="title" placeholder="Title" name="title" [(ngModel)]="addProductRequest.title">
+        </div>
+        <div class="form-group">
+            <label for="manufacturer"></label>
+            <input type="text" class="form-control" id="manufacturer" placeholder="Manufacturer" name="manufacturer" [(ngModel)]="addProductRequest.manufacturer">
+          </div>
+          <div class="form-group">
+            <label for="location"></label>
+            <input type="text" class="form-control" id="location" placeholder="Location" name="location" [(ngModel)]="addProductRequest.location">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
